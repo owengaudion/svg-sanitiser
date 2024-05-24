@@ -1,0 +1,128 @@
+:root {
+  --primary: #1e1e1e;
+  --secondary: #a16cf6;
+  --tertiary: #3b3c43;
+  --white: #f1f1f1;
+  --black: #000000;
+  --lightgrey: #f1f1f1;
+  --midgrey: #b2b2b2;
+  --darkgrey: #4d4d4d;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  margin-top: 0px;
+}
+
+body {
+  background-color: var(--white);
+  font-family: monospace;
+  margin: 0;
+}
+
+p, span {
+  line-height: 18px;
+}
+
+.form-container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 8px;
+  padding: 50px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  width: calc(100% - 50px);
+}
+.form-container input {
+  width: 100%;
+  margin: 10px 0px;
+  display: block;
+}
+.form-container input[type=file] {
+  border: 1px solid #203b4d;
+  border-style: dashed;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+.form-container input[type=password] {
+  padding: 8px;
+}
+.form-container button {
+  background-color: #203b4d;
+  color: #fff;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.form-container button:hover {
+  background-color: #36dfb8;
+}
+.form-container .download-link {
+  background-color: #36dfb8;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.form-container .download-link .download-link-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 60px;
+  text-align: center;
+}
+.form-container .download-link .download-link-content h1 {
+  font-size: 22px;
+  font-weight: 100;
+  color: #203b4d;
+  margin-bottom: 20px;
+}
+.form-container .download-link a.close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  z-index: 2;
+}
+.form-container .download-link a#downloadAll {
+  background: #203b4d;
+  display: inline-block;
+  color: #fff;
+  padding: 12px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.form-container .download-link a#downloadAll:hover {
+  transform: scale(1.02);
+}
+
+footer {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: #4F4F4F;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*# sourceMappingURL=main.css.map */
